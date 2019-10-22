@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="HappyTails_admin.Views.CreateProductPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HappyTails_admin.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock FontSize="20" Text="Add Product" Margin="12"></TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock Text="Product name" Margin="12"/>
+                <TextBox Name="txtName" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Brand" Margin="12"/>
+                <TextBox Name="txtBrand" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Color" Margin="12"/>
+                <TextBox Name="txtColor" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Price" Margin="12"/>
+                <TextBox Name="txtPrice" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Length" Margin="12"/>
+                <TextBox Name="txtLength" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Height" Margin="12"/>
+                <TextBox Name="txtHeight" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Animal category" Margin="12"/>
+                <TextBox Name="txtCategory" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock Text="Product description" Margin="12"/>
+                <TextBox Name="txtDescription" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock></TextBlock>
+                <Button Name="btnAddProd" Content="Add new Product" Click="btnAddProd_Click" Margin="12" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="HappyTails_admin.Views.DeleteCustomer2Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HappyTails_admin.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock FontSize="20" Text="Delete Customer" Margin="12"></TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelId" Text="Customer Id" Margin="12"></TextBlock>
+                <TextBlock Name="txtId" Text="" Margin="12"></TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelUsername" Text="Username" Margin="12"></TextBlock>
+                <TextBlock Name="txtUsername" Text="" Margin="12"></TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelFirstname" Text="Firstname" Margin="12"></TextBlock>
+                <TextBlock Name="txtFirstname" Text="" Margin="12"></TextBlock>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelSurname" Text="Surname" Margin="12"/>
+                <TextBlock Name="txtSurname" Text="" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelEmail" Text="Email" Margin="12"/>
+                <TextBlock Name="txtEmail" Text="" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelZipCode" Text="ZipCode" Margin="12"/>
+                <TextBlock Name="txtZipCode" Text="" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock></TextBlock>
+                <TextBlock Name="labelStreet" Text="Street" Margin="12"/>
+                <TextBlock Name="txtStreet" Text="" Width="300" Margin="12" HorizontalAlignment="Left"/>
+                <TextBlock></TextBlock>
+                <Button Name="btnDeleteCust" Content="Delete Customer" Click="btnDeleteCust_Click" Margin="12" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="HappyTails_admin.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HappyTails_admin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView IsBackButtonVisible="Collapsed"
+                        x:Name="nvTopLevelNav"
+                        Loaded="nvTopLevelNav_Loaded"
+                        Margin="0,12,0,0"
+                        ItemInvoked="nvTopLevelNav_ItemInvoked"
+                        IsSettingsVisible="False"
+                        IsTabStop="False"
+                        Header="Welcome to HappyTails">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Tag="HomePage" >
+                    <TextBlock Tag="Nav_Home">Home</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Add" Tag="CreateProductPage">
+                    <TextBlock Tag="Nav_CreateProduct">Add Product</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Edit" Tag="EditProductPage">
+                    <TextBlock Tag="Nav_EditProduct">Edit Product</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Delete" Tag="DeleteProductPage">
+                    <TextBlock Tag="Nav_DeleteProduct">Delete Product</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="People" Tag="CustomersPage">
+                    <TextBlock Tag="Nav_Customers">Customers</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Add" Tag="CreateCustomerPage">
+                    <TextBlock Tag="Nav_CreateCustomer">Add Customer</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Edit" Tag="EditCustomerPage">
+                    <TextBlock Tag="Nav_EditCustomer">Edit Customer</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Delete" Tag="DeleteCustomerPage">
+                    <TextBlock Tag="Nav_DeleteCustomer">Delete Customer</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Paste" Tag="PurchasesPage">
+                    <TextBlock Tag="Nav_Purchases">Purchases</TextBlock>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Frame x:Name="contentFrame"></Frame>
+        </NavigationView>
+    </Grid>
+</Page>
